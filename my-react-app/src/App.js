@@ -38,9 +38,11 @@ function App() {
     if(user) {
       getImages();
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user]);
 
   async function magicLinkLogin() {
+    // eslint-disable-next-line no-unused-vars
     const { data, error } = await supabase.auth.signInWithOtp({
       email: email
     });
@@ -54,6 +56,7 @@ function App() {
   }
 
   async function signOut() {
+    // eslint-disable-next-line no-unused-vars
     const { error } = await supabase.auth.signOut();
   }
 
