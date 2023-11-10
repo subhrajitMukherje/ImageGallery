@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import { useState, useEffect } from 'react';
 import './App.css';
 import { Container, Form, Button, Row, Col, Card } from 'react-bootstrap';
